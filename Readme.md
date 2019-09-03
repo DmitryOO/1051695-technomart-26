@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Дмитрий Кутузов](https://up.htmlacademy.ru/htmlcss/26/user/1051695).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил  Поданев](https://htmlacademy.ru/profile/mpodanev)
 
 ---
 
