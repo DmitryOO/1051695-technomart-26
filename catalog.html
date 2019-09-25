@@ -87,34 +87,55 @@
         </nav>
         <h2>перфораторы</h2>
         <section>
-          <h3>производители:</h3>
-          <ul>
+          <h3 class="visually-hidden">Фильтр товаров:</h3>
+          <form method="get" action="#">
+           <fieldset>
+            <legend>производители:</legend>
+            <ul>
+             <li>
+               <label>
+                <input type="checkbox" name="bosh" checked>bosh</input>
+               </label>
+             </li>
             <li>
-              <button type="button">bosh</button>
+                <label>
+                  <input type="checkbox" name="interscol">интерскол</input>
+                </label>
             </li>
             <li>
-              <button type="button">интерскол</button>
+                <label>
+                  <input type="checkbox" name="makita" checked>makita</input>
+                </label>
             </li>
             <li>
-              <button type="button">makita</button>
+                <label>
+                  <input type="checkbox" name="dewalt">dewalt</input>
+                </label>
             </li>
             <li>
-              <button type="button">dewalt</button>
+                <label>
+                  <input type="checkbox" name="hitachi">hitachi</input>
+                </label>
             </li>
-            <li>
-              <button type="button">hitachi</button>
-            </li>
-          </ul>
-          <h3>питание:</h3>
-          <ul>
+           </ul>
+           </fieldset>
+           <fieldset>
+            <legend>питание:</legend>
+            <ul>
               <li>
-                <button type="button">аккумуляторные</button>
+                  <label>
+                      <input type="radio" name="type" checked value="battery">аккумуляторные</input>
+                  </label>
               </li>
               <li>
-                <button type="button">сетевые</button>
+                  <label>
+                      <input type="radio" name="type" value="net">сетевые</input>
+                  </label>
               </li>
-          </ul>
-          <button type="button">показать</button>
+            </ul>
+           </fieldset>
+           <button type="submit">показать</button>
+          </form>
         </section>
         <section>
             <ul>
@@ -190,6 +211,12 @@
                   <a href="#">в закладки</a>
                 </li>
             </ul>
+        </section>
+        <section>
+          <h2 class="visually-hidden">Оформление заказа</h2>
+          <a href="#">оформить заказ</a>
+          <button type="button">Продолжить покупки</button>
+          <button type="button">Закрыть</button>
         </section>
       </main>
       <footer>
