@@ -3,31 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <a>
-       <img src="img/logo-technomart.svg" width="100" height="19" alt="Логотип компании Техномарт">
-      </a>
-      <button type="button">Поиск</button>
-      <ul>
+    <header class="main-header">
+     <nav class="main-navigation">
+      <div class="container-1">
+       <a class="main-header-logo">
+        <img src="img/logo-technomart.svg" width="100" height="19" alt="Логотип компании Техномарт">
+       </a>
+       <button class="search-button" type="button">Поиск</button>
+       <ul class="user-navigation">
         <li>
           <a href=#>Закладки</a>
         </li>
         <li>
           <a href=#>Корзина</a>
         </li>
-      </ul>
-      <a href="#">Оформить заказ</a>
-      <section>
+       </ul>
+       <a class="order-button" href="#">Оформить заказ</a>
+      </div>
+      <section class="info">
        <h1>Интернет-магазин строительных материалов и инструмента для ремонта</h1>
        <div>+7 (812) 555-05-55</div>
        <span>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</span>
        <a href="#">Войти</a>
        <a href="#">Регистрация</a>
       </section>
-      <nav>
-        <ul>
+        <ul class="site-navigation">
           <li>
            <a>Главная</a>
           </li>
@@ -50,7 +56,7 @@
             <a href=#>Контакты</a>
           </li>
         </ul>
-      </nav>
+     </nav>
     </header>
       <main>
         <section>
@@ -185,15 +191,15 @@
           </ul>
           <img src=# alt="car.svg">
         </section>
-        <section>
+        <section class="about">
           <div>
-           <h2>компания "Техномарт"</h2>
+           <h2>компания &laquo;Техномарт&raquo;</h2>
            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
            <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
            <ul>
              <li>Деловые линии</li>
              <li>Автотрейдинг</li>
-             <li>ЖелДорЭкспидиция</li>
+             <li>ЖелДорЭкспедиция</li>
            </ul>
            <a href=#>подробнее о компании</a>
           </div>
@@ -204,7 +210,7 @@
             <a href=#>заблудились напишите нам</a>
           </div>
         </section>
-        <section>
+        <section class="visually-hidden">
          <h2 class="visually-hidden">письмо</h2>
          <form action="https://echo.htmlacademy.ru/" method="post">
            <label>
@@ -221,18 +227,18 @@
            <button type="button">Закрыть</button>
          </form>
         </section>
-        <section>
+        <section class="visually-hidden">
           <h2 class="visually-hidden">Наш адрес</h2>
           <img src="img/map-big.png" width="970" height="476" alt="Офис компании по адресу ул. Б. Конюшенная, д.19/8, Санкт-Петербург">
           <button type="button">Закрыть</button>
         </section>
       </main>
-      <footer>
-        <div>
-          <a href=#>
+      <footer class="main-footer">
+        <div class="footer-1">
+          <a class="footer-logo" href=#>
             <img src="img/logo-technomart.svg" width="100" height="19" alt="Логотип">
           </a>
-          <ul>
+          <ul class="footer-menu">
             <li>
               <a href=#>Компания</a>
             </li>
@@ -240,7 +246,7 @@
               <a href=#>Новости</a>
             </li>
             <li>
-              <a href=#>Каталог</a>
+              <a href="catalog.html">Каталог</a>
             </li>
             <li>
               <a href=#>Доставка</a>
@@ -250,7 +256,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-2">
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
           <p>+7 (812) 555-05-55</p>
           <ul>
@@ -268,8 +274,8 @@
             </li>
           </ul>
         </div>
-        <div>
-          <p>&copy; 2010-2019 Компания "Техномарт"</p>
+        <div class="footer-3">
+          <p>&copy; 2010-2019 Компания &laquo;Техномарт&raquo;</p>
           <p>Все права защищены</p>
           <ul>
             <li>
