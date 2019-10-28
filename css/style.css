@@ -292,7 +292,7 @@ a {
   align-items: flex-end;
 }
 .footer-logo{
-  padding-top:21px;
+  padding-top:20px;
   width:220px;
   height: 68px;
   text-align: center;
@@ -844,12 +844,23 @@ border-color: #bdc6ca;
   line-height: 24px;
   margin-top: 27px;
 }
+.services-background{
+  background-color: #f4f7f9;
+}
+.services-heading p{
+  display: inline-block;
+  width:398px;
+}
 .services-heading h2{
   font-family: 'Cuprum',Arial, Helvetica, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
+}
+.slider{
+  display: inline-block;
+  width: 500px;
 }
 .slider h2{
   font-family: 'Cuprum',Arial, Helvetica, sans-serif;
@@ -859,14 +870,22 @@ border-color: #bdc6ca;
   text-transform: uppercase;
   color: #32425c;
 }
+.slider p{
+  display: inline-block;
+  width:275px;
+}
+.slider li{
+  width:700px;
+  min-height:300px;
+}
 .slider li:nth-child(1){
-  background: url(../img/car.png) center no-repeat;
+  background: url(../img/car.png) right bottom no-repeat;
 }
 .slider li:nth-child(2){
-  background: url(../img/garanty.png) center no-repeat;
+  background: url(../img/garanty.png) right bottom no-repeat;
 }
 .slider li:nth-child(3){
-  background: url(../img/credit.png) center no-repeat;
+  background: url(../img/credit.png) right bottom no-repeat;
 }
 .slider a{
   display: inline-block;
@@ -890,9 +909,14 @@ border-color: #bdc6ca;
 .services-menu{
   width: 240px;
   display: inline-block;
+  padding-left: 0px;
   background-color: #32425c;
 }
 .services-menu a{
+  display: block;
+  height:61px;
+  padding-top: 15px;
+  padding-left: 23px;
   font-size:21px;
   font-weight: bold;
   line-height: 30px;
@@ -908,12 +932,29 @@ border-color: #bdc6ca;
   background-color: #ffffff;
   color: #32425c;
 }
+.popular-items,
+.popular-producers,
+.services{
+  width:940px;
+  margin-left: auto;
+  margin-right:auto;
+}
+.services-background{
+  width:100%;
+  background-color:  #f4f7f9;;
+}
+.offers {
+  width:940px;
+  margin-left: auto;
+  margin-right:auto;
+  position: relative;
+  min-height: 409px;
+}
 .offers-card {
   display: inline-block;
   width: 300px;
   height: 123px;
   color: #ffffff;
-  margin-top:20px;
   padding-bottom: 50px;
 }
 .offers-card h3{
@@ -940,29 +981,44 @@ border-color: #bdc6ca;
   padding-top: 12px;
   margin-left: 23px;
 }
-.offers-list li:nth-of-type(1) div{
+.offers div{
+  position:absolute;
+}
+.offers div:nth-of-type(1){
   background-color:#ffbf47;
   background-image: url(../img/icon-1.svg), url(../img/new-flag.png);
   background-repeat: no-repeat, no-repeat;
   background-position:  213px 31px, 240px 0px;
 }
-.offers-list li:nth-of-type(2) div{
+.offers div:nth-of-type(2) {
   background:#3bbce3 url(../img/icon-2.svg) no-repeat 197px 33px;
+  left:320px;
 }
-.offers-list li:nth-of-type(3) div{
+.offers div:nth-of-type(3) {
   background:#dc91d8 url(../img/icon-3.svg) no-repeat 191px 31px;
+  left:640px;
 }
-.offers-list li:nth-of-type(4) div{
+.offers div:nth-of-type(4) {
   background:#8ed78f url(../img/icon-4.svg) no-repeat 196px 26px;
+  top:143px;
+  left:640px;
 }
-.offers-list li:nth-of-type(5) div{
+.offers div:nth-of-type(5) {
   background:#ffc047 url(../img/icon-5.svg) no-repeat 191px 32px;
+  top:286px;
+  left:640px;
 }
 .offers-card a:hover{
   background-color:rgba(0, 0, 0, 0.2);
 }
 .offers-card a:active{
   background-color:rgba(0, 0, 0, 0.3);
+}
+.billboard ul{
+  padding-left:0 ;
+}
+.billboard {
+  top: 120px;
 }
 .billboard li{
   display: inline-block;
@@ -976,6 +1032,7 @@ border-color: #bdc6ca;
   padding-left: 24px;
 }
 .billboard li:last-child  {
+  display:none;
   background:url(../img/perforators.jpg);
 }
 .billboard h3{
@@ -1051,6 +1108,20 @@ border-color: #bdc6ca;
 }
 .popular-heading a:active{
   background-color:#ba2732;
+}
+.popular-producers ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+.popular-producers li{
+  margin-right: 20px;
+}
+.popular-producers li:nth-child(4n){
+  margin-right: 0;
+}
+.popular-producers li:nth-child(n+5){
+  margin-top:14px;
 }
 .popular-producers li a{
   display: inline-block;
