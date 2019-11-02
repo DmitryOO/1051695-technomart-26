@@ -11,53 +11,58 @@
   <body>
       <header class="main-header">
 
-           <div class="container-1">
-            <div class="container-2">
-             <a href="index.html" class="main-header-logo">
-              <img src="img/logo-technomart.svg" width="110" alt="Логотип компании Техномарт">
-             </a>
-             <button class="search-button" type="button">Поиск:</button>
-             <ul class="user-navigation">
-              <li>
-               <a href=#>Закладки:</a>
-              </li>
-              <li>
-               <a href=#>Корзина:</a>
-              </li>
-             </ul>
+          <div class="container-1">
+           <div class="container-2">
+            <a class="main-header-logo">
+             <img src="img/logo-technomart.svg" width="110"  alt="Логотип компании Техномарт">
+            </a>
+            <div class="search">Поиск:</div>
+            <input type="text"  id="search-button" class="visually-hidden" value="Перфоратор"></input>
+            <ul class="user-navigation">
+             <li>
+              <a href=# class="bookmarks">Закладки: 0</a>
+             </li>
+             <li>
+              <a href=# class="cart">Корзина: 0</a>
+             </li>
+             <li>
              <a class="order-button" href="#">Оформить заказ</a>
-            </div>
+             </li>
+
+          </ul>
            </div>
-           <section class="info">
-            <h1>Интернет-магазин строительных материалов <br>и инструментов для ремонта</h1>
-            <div class="contacts">
-             <div class="phone-number">+7 (812) 555-05-55</div>
-             <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-            </div>
+          </div>
+          <section class="info">
+           <h1>Интернет-магазин строительных материалов <br>и инструментов для ремонта</h1>
+           <div class="contacts">
+            <div class="phone-number">+7 (812) 555-05-55</div>
+            <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+           </div>
             <div class="visitor">
              <div class="visitor-name">
-              <a href=#>Равшан Джамшутович</a>
+              <a class="name" href="#">Равшан Джамшутович</a>
+              <a class="exit" href="#"><p class="visually-hidden">Выход</p></a>
              </div>
              <ul class="visitor-info">
-              <li>
+              <li class="my-orders">
                 <a href="#">Мои заказы</a>
               </li>
-              <li>
+
+              <li class="personal">
                 <a href=#>Личный кабинет</a>
               </li>
              </ul>
             </div>
           </section>
-
-            <ul class="site-navigation">
+          <ul class="site-navigation">
               <li>
-                <a href="index.html">Главная</a>
+               <a href="index.html">Главная</a>
               </li>
               <li>
-                <a href=#>Компания</a>
+               <a href=#>Компания</a>
               </li>
               <li>
-                <a href="catalog.html">Каталог</a>
+                <a>Каталог</a>
               </li>
               <li>
                 <a href=#>Новости</a>
@@ -71,9 +76,8 @@
               <li>
                 <a href=#>Контакты</a>
               </li>
-            </ul>
-
-    </header>
+          </ul>
+        </header>
       <main>
         <nav class="catalog-navigation">
             <ul class="catalog-navigation-list">
@@ -118,54 +122,55 @@
                   </div>
                 </div>
            </fieldset>
-           <fieldset>
+           <fieldset class="producer-fieldset">
             <legend>производители:</legend>
-            <ul>
+            <ul class="producer side-button">
              <li>
-               <label>
-                 bosh
-                <input type="checkbox" name="bosh" checked>
-               </label>
+              <input type="checkbox" name="bosch" id="bosch" class="visually-hidden" checked>
+              <label for="bosch">
+                 bosch
+              </label>
              </li>
             <li>
-                <label>
-                  интерскол
-                  <input type="checkbox" name="interscol">
-                </label>
+              <input type="checkbox" name="interscol" id="interskol" class="visually-hidden">
+              <label for="interskol">
+                 интерскол
+              </label>
             </li>
             <li>
-                <label>
-                    makita
-                  <input type="checkbox" name="makita" checked>
-                </label>
+              <input type="checkbox" name="makita" id="makita" class="visually-hidden" checked>
+              <label for="makita">
+                 makita
+             </label>
             </li>
             <li>
-                <label>
+              <input type="checkbox" name="dewalt" id="dewalt" class="visually-hidden">
+              <label for="dewalt">
                     dewalt
-                  <input type="checkbox" name="dewalt">
-                </label>
+              </label>
             </li>
             <li>
-                <label>
+              <input type="checkbox" name="hitachi" id="hitachi" class="visually-hidden">
+              <label for="hitachi">
                     hitachi
-                  <input type="checkbox" name="hitachi">
-                </label>
+              </label>
             </li>
            </ul>
            </fieldset>
-           <fieldset>
+           <div class="producer-line"></div>
+           <fieldset class="power-fieldset">
             <legend>питание:</legend>
-            <ul>
+            <ul class="power side-button">
               <li>
-                  <label>
+                  <input type="radio" name="type" id="battery" value="battery" class="visually-hidden" checked>
+                  <label for="battery">
                       аккумуляторные
-                      <input type="radio" name="type" checked value="battery">
                   </label>
               </li>
               <li>
-                  <label>
+                  <input type="radio" name="type" id="net" value="net" class="visually-hidden">
+                  <label for="net">
                       сетевые
-                      <input type="radio" name="type" value="net">
                   </label>
               </li>
             </ul>
@@ -330,7 +335,7 @@
             <article class="product-info">
               <div>
                 <h3>пара слов о перфораторах</h3>
-                <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+                <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
                   Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
                   В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
               </div>
@@ -344,10 +349,10 @@
         </section>
 
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer catalog-footer">
           <div class="footer-1-wrapper">
           <div class="footer-1">
-            <a href="index.html" class="footer-logo">
+            <a class="footer-logo" href=#>
               <img src="img/logo-technomart.svg" width="140"  alt="Логотип компании Техномарт">
             </a>
             <ul class="footer-menu">
@@ -372,7 +377,7 @@
           <div class="footer-2-wrapper">
           <div class="footer-2">
             <div>
-              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               <p>+7 (812) 555-05-55</p>
             </div>
             <ul>
@@ -392,41 +397,44 @@
           </div>
           </div>
           <div class="footer-3-wrapper">
-              <div class="footer-3">
-               <div class="footer-3-element">
-                <p>&copy; 2010-2019 Компания &laquo;Техномарт&raquo;</p>
-                <p>Все права защищены</p>
-               </div>
-               <ul class="footer-3-element">
-                 <li class="sosial vk">
-                   <a href=#>
-                     <div></div>
-                     <p class="visually-hidden">vk</p>
-                   </a>
-                 </li>
-                 <li class="sosial fb">
-                   <a href=#>
-                     <div></div>
-                     <p class="visually-hidden">fb</p>
-                   </a>
-                 </li>
-                 <li class="sosial insta">
-                   <a  href=#>
-                     <div></div>
-                     <p class="visually-hidden">intagram</p>
-                   </a>
-                 </li>
-               </ul>
-               <div class="footer-3-element">
-                <p>Обратная связь:</p>
-                <a href=#>mail@htmlacademy.ru</a>
-               </div>
-               <div class="footer-3-element">
-                <p>Разработано-</p>
-                <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-               </div>
-              </div>
+           <div class="footer-3">
+            <div class="copyright">
+             <p>&copy; 2010-2019 Компания &laquo;Техномарт&raquo;</p>
+             <p>Все права защищены</p>
+            </div>
+            <ul class="social-icon">
+              <li class="social vk">
+                <a href=#>
+                  <div></div>
+                  <p class="visually-hidden">vk</p>
+                </a>
+              </li>
+              <li class="social fb">
+                <a href=#>
+                  <div></div>
+                  <p class="visually-hidden">fb</p>
+                </a>
+              </li>
+              <li class="social insta">
+                <a  href=#>
+                  <div></div>
+                  <p class="visually-hidden">intagram</p>
+                </a>
+              </li>
+            </ul>
+            <div class="creator">
+             <div>
+              <p>Обратная связь:</p>
+              <a href=#>mail@htmlacademy.ru</a>
+
              </div>
+             <div>
+             <p>Разработано &mdash;</p>
+             <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+             </div>
+            </div>
+           </div>
+          </div>
         </footer>
   </body>
 </html>
