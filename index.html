@@ -40,6 +40,22 @@
        </div>
        <a href="#" class="enter-button" >Войти</a>
        <a href="#" class="register-button">Регистрация</a>
+       <div class="visitor">
+        <div class="visitor-name">
+         <a class="name" href="#">Равшан Джамшутович</a>
+         <a class="exit" href="#"><p class="visually-hidden">Выход</p></a>
+        </div>
+        <ul class="visitor-info">
+         <li class="my-orders">
+           <a href="#">Мои заказы</a>
+         </li>
+
+         <li class="personal">
+           <a href=#>Личный кабинет</a>
+         </li>
+        </ul>
+       </div>
+     </section>
       </section>
       <ul class="site-navigation">
           <li>
@@ -275,28 +291,50 @@
             <a href=#>заблудились? напишите нам!</a>
           </div>
         </section>
-        <section class="visually-hidden">
-         <h2 class="visually-hidden">письмо</h2>
-         <form action="https://echo.htmlacademy.ru/" method="post">
-           <label>
-             Ваше имя:
-             <input type="text" name="name" placeholder="Имя Фамилия">
-           </label>
-           <label>
-              Ваш e-mail:
-              <input type="text" name="e-mail" placeholder="email@example.com">
-           </label>
-           <p>Текст письма:<p>
-           <textarea  name="message">В свободной форме</textarea>
-           <button type="submit">Отправить</button>
-           <button type="button">Закрыть</button>
-         </form>
-        </section>
-        <section class="visually-hidden">
-          <h2 class="visually-hidden">Наш адрес</h2>
-          <img src="img/map-big.png" width="970" height="476" alt="Офис компании по адресу ул. Б. Конюшенная, д.19/8, Санкт-Петербург">
-          <button type="button">Закрыть</button>
-        </section>
+
+
+        <div class="map-section visually-hidden">
+          <div class="map">
+           <h2 class="visually-hidden">Наш адрес </h2>
+           <img src="img/map-big.png" width="970" alt="Офис компании по адресу ул. Б. Конюшенная, д.19/8, Санкт-Петербург">
+           <button class="close-button" type="button" name="close-map">
+             <p class="visually-hidden">Закрыть</p>
+           </button>
+          </div>
+        </div>
+
+        <div class="letter-section visually-hidden">
+            <div class="letter">
+             <h2 class="visually-hidden">письмо</h2>
+             <form action="https://echo.htmlacademy.ru/" method="post">
+               <div class="name-mail">
+                 <div class="your-name">
+                  <label >
+                   Ваше имя:
+                   <input type="text" name="name" placeholder="Имя Фамилия">
+                  </label>
+                 </div>
+                 <div class="your-mail">
+                  <label>
+                  Ваш e-mail:
+                  <input type="text" name="e-mail" placeholder="email@example.com">
+                 </label>
+                </div>
+               </div>
+               <div class="letter-text">
+                <label>
+                 <p>Текст письма:</p>
+                <textarea name="message" placeholder="В свободной форме"></textarea>
+                </label>
+               </div>
+               <div class="submit-background">
+                <button class="submit-button" type="submit">Отправить</button>
+               <div>
+               <button class="close-button" type="button"><p class="visually-hidden">Закрыть</p></button>
+
+             </form>
+            </div>
+        </div>
       </main>
       <footer class="main-footer">
         <div class="footer-1-wrapper">

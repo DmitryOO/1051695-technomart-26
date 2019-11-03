@@ -88,6 +88,10 @@ input[type="radio"].visually-hidden {
 .cart{
   padding-left: 18px;
 }
+.bookmarks.active,
+.cart.active{
+  background-color: #ee3643;
+}
 .bookmarks::before{
   content: "";
   position: absolute;
@@ -311,6 +315,7 @@ input[type="radio"].visually-hidden {
 
 }
 .visitor{
+  display: none;
   width: 288px;
   padding-top:19px;
 }
@@ -380,6 +385,13 @@ input[type="radio"].visually-hidden {
   position: relative;
   left: 12px;
   top: -3px;
+}
+
+.main-header .authorized > a{
+  display:none;
+}
+.authorized .visitor{
+  display: block;
 }
 
 .site-navigation {
@@ -1109,9 +1121,7 @@ border-bottom-color: #367315 ;
   border:none;
 }
 .arrows a:hover,
-.arrows a:focus,
 .arrows a:active{
-  outline:none;
   border: none;
 }
 .arrows a div{
@@ -1510,12 +1520,16 @@ border-color: #bdc6ca;
 }
 .billboard a:hover,
 .slider a:hover,
-.about a:hover {
+.about a:hover,
+.buy a:hover
+ {
   background-color:#ca2c37;
 }
 .billboard a:active,
 .slider a:active,
-.about a:active {
+.about a:active,
+.buy a:active
+ {
   background-color:#ba2732;
 }
 .popular-heading{
@@ -1553,14 +1567,17 @@ border-color: #bdc6ca;
   padding-top: 11px;
 
 }
-.popular-heading a:hover{
+.popular-heading a:hover,
+.letter .submit-button:hover{
   background-color:#ca2c37;
 }
-.popular-heading a:active{
+.popular-heading a:active,
+.letter .submit-button:active
+{
   background-color:#ba2732;
 }
 .popular-producers .popular-heading{
-  margin-top: -2px;
+  margin-top: 2px;
 }
 .popular-producers .popular-heading a{
   padding-top: 9px;
@@ -1622,4 +1639,183 @@ border-color: #bdc6ca;
 .social:hover,
 .social:active{
   background-color:#ee3643;
+}
+.map-section{
+  width: 100%;
+  text-align: center;
+  height: 0;
+}
+.map{
+  display: inline-block;
+  top: -723px;
+  position: relative;
+}
+.close-button{
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border:none;
+  background-color:transparent;
+  background-image: url(../img/icon-close.svg);
+  right:24px;
+  top:24px;
+  cursor: pointer;
+}
+.letter-section{
+  width: 100%;
+  text-align: center;
+  height: 0;
+}
+.letter {
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -244px;
+  width: 620px;
+  height: 430px;
+  text-align: center;
+  background-color: #ffffff;
+  border-top: 7px solid #ff5256;
+}
+.letter .close-button{
+  right:9px;
+  top:9px;
+}
+.letter label{
+  font-size: 18px;
+}
+.name-mail{
+  margin-top: 40px;
+}
+.name-mail div{
+  display: inline-block;
+  text-align: left;
+  width: 220px;
+}
+
+.name-mail input {
+  width: 220px;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  line-height: 32px;
+  padding-left: 14px;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-top: 8px;
+}
+.name-mail input:hover,
+.letter-text textarea:hover
+{
+  border-color: #b5b5b5;
+}
+.name-mail input:focus,
+.letter-text textarea:focus,
+.name-mail input:active,
+.letter-text textarea:active
+{
+outline: none;
+border-color: #ee3643;
+}
+.letter-text textarea{
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  line-height: 32px;
+  padding-left: 14px;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  background-image: none;
+  width: 462px;
+  height: 116px;
+}
+.letter-text{
+  margin-bottom: 30px;
+}
+.letter-text p {
+    margin-bottom: 7px;
+    margin-top: 19px;
+    text-align: left;
+    padding-left: 81px;
+}
+.your-name{
+  margin-right:14px;
+}
+.letter .submit-button,
+.buy a,
+.buy button{
+  display: inline-block;
+  width:460px;
+  height:38px;
+  border: none;
+  background-color: #ee3643;
+  border-radius: 3px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 17.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.submit-background{
+  width: 620px;
+  height: 112px;
+  background-color:#f4f4f4;
+  padding-top: 37px;
+}
+.catalog-modal-section{
+  width: 100%;
+  text-align: center;
+  height: 0;
+}
+.catalog-modal
+{
+box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+position: relative;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: stretch;
+top: -1539px;
+width: 620px;
+height: 282px;
+text-align: center;
+background-color: #ffffff;
+border-top: 7px solid #ff5256;
+}
+.catalog-modal .close-button{
+  top: 9px;
+  right: 9px;
+}
+.buy
+{
+ height: 112px;
+ background-color: #f1f1f1;
+ padding-top: 37px;
+}
+.added
+{
+  flex-grow: 1;
+  background-image: url(../img/icon-mark.svg);
+  background-repeat: no-repeat;
+  background-position: 81px 47px;
+  font-size: 30px;
+  padding-top: 63px;
+  padding-left: 55px;
+}
+.buy a,
+.buy button
+{
+  width:220px;
+  padding-top: 0;
+}
+.buy a{
+  padding-top: 10px;
+}
+.buy button{
+  background-color: #ffffff;
+  color: #000000;
+  margin-left: 14px;
 }
