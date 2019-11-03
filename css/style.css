@@ -1733,11 +1733,12 @@ border-color: #ee3643;
 .letter-text{
   margin-bottom: 30px;
 }
-.letter-text p {
-    margin-bottom: 7px;
-    margin-top: 19px;
-    text-align: left;
-    padding-left: 81px;
+.letter-text span {
+   display:block;
+   margin-bottom: 7px;
+   margin-top: 19px;
+   text-align: left;
+   padding-left: 81px;
 }
 .your-name{
   margin-right:14px;
