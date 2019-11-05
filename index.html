@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -16,8 +15,9 @@
         <a class="main-header-logo">
          <img src="img/logo-technomart.svg" width="110"  alt="Логотип компании Техномарт">
         </a>
-        <div class="search">Поиск:</div>
-        <input type="text"  id="search-button" class="visually-hidden" value="Перфоратор">
+        <form id="search-button" name="search" action="https://echo.htmlacademy.ru/" method="post">
+          <input type="text" id="search-button-input"  placeholder="Поиск:">
+        </form>
         <ul class="user-navigation">
          <li>
           <a href=# class="bookmarks">Закладки: 0</a>
@@ -94,9 +94,10 @@
                <a href=#>на все случаи</a>
               </div>
               <div class="billboard">
+                    <button type="button" name="left" class="billboard-arrow left-arrow"></button>
                     <div class="slider-controls">
-                      <i></i>
-                      <i class="active"></i>
+                      <button type="button" name="circle-2"></button>
+                      <button type="button" name="circle-2" class="active"></button>
                     </div>
                   <ul>
                     <li class="active">
@@ -110,6 +111,7 @@
                      <a href="catalog.html">открыть каталог</a>
                     </li>
                   </ul>
+                  <button type="button" name="right" class="billboard-arrow"></button>
               </div>
            </div>
            <div class="offers-block-2">
@@ -137,7 +139,7 @@
           <ul class="items items-index">
               <li>
                 <div class="actions">
-                  <a href="#">купить</a>
+                  <a href="#modal">купить</a>
                   <a href="#">в закладки</a>
                 </div>
                 <div class="image">
@@ -149,7 +151,7 @@
               </li>
               <li>
                 <div class="actions">
-                  <a href="#">купить</a>
+                  <a href="#modal">купить</a>
                   <a href="#">в закладки</a>
                 </div>
                 <div class="image">
@@ -161,7 +163,7 @@
               </li>
               <li>
                 <div class="actions">
-                 <a href="#">купить</a>
+                 <a href="#modal">купить</a>
                  <a href="#">в закладки</a>
                 </div>
                 <div class="image">
@@ -172,9 +174,9 @@
                 <div class="item-price">25500 Р.</div>
               </li>
               <li>
-                <div class="flag flag-new">новинка</div>
+                <div class="flag ">новинка</div>
                 <div class="actions">
-                 <a href="#">купить</a>
+                 <a href="#modal">купить</a>
                  <a href="#">в закладки</a>
                 </div>
                 <div class="image">
@@ -186,50 +188,61 @@
               </li>
           </ul>
         </section>
+        <div class="catalog-modal-section " id="modal">
+            <div class="catalog-modal">
+             <h2 class="visually-hidden">Оформление заказа</h2>
+             <div class="added">Товар добавлен в корзину!</div>
+             <div class="buy">
+              <a href="#">оформить заказ</a>
+              <button class="continue" type="button">Продолжить покупки</button>
+            </div>
+            <a href="" class="close-button"><span class="visually-hidden">Закрыть</span></a>
+          </div>
+        </div>
         <section class="popular-producers">
           <div class="popular-heading">
             <h2>популярные производители:</h2>
             <a href=#>все производители</a>
           </div>
-          <ul>
+          <ul class="popular-ul">
             <li>
               <a href=#>
-                <img src="img/bosch.png" alt="bosch">
+                <img class="bosh" src="img/bosch.png" alt="bosch">
               </a>
             </li>
             <li>
               <a href=#>
-                <img src="img/makita.png" alt="makita">
+                <img class="makita" src="img/makita.png" alt="makita">
               </a>
             </li>
             <li>
               <a href=#>
-                <img src="img/dewalt.png" alt="dewalt">
+                <img class="dewalt" src="img/dewalt.png" alt="dewalt">
               </a>
             </li>
             <li>
               <a href=#>
-                <img src="img/interscol.png" alt="интерскол">
+                <img class="interscol" src="img/interscol.png" alt="интерскол">
               </a>
             </li>
             <li>
               <a href=#>
-                <img src="img/hitachi.png" alt="hitachi">
+                <img class="hitachi" src="img/hitachi.png" alt="hitachi">
               </a>
             </li>
             <li>
               <a href=#>
-                <img src="img/lg.png" alt="LG">
+                <img class="lg" src="img/lg.png" alt="LG">
               </a>
             </li>
             <li>
               <a href=#>
-                <img src="img/aeg.png" alt="AEG">
+                <img class="aeg" src="img/aeg.png" alt="AEG">
               </a>
             </li>
             <li>
               <a href=#>
-                <img src="img/metabo.png" alt="metabo">
+                <img class="metabo" src="img/metabo.png" alt="metabo">
               </a>
             </li>
           </ul>
@@ -282,13 +295,16 @@
              <li>Автотрейдинг</li>
              <li>ЖелДорЭкспедиция</li>
            </ul>
-           <a href=#>подробнее о компании</a>
+           <a class="link" href=#>подробнее о компании</a>
           </div>
           <div>
             <h2>контакты</h2>
-            <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+            <p class="office">Вы можете забрать товар сами, заехав в наш офис:</p>
+            <a href="https://goo.gl/maps/gjENuL17HZbDqn1V8">
             <img src="img/map.jpg" alt="Офис компании по адресу ул. Б. Конюшенная, д.19/8, Санкт-Петербург">
-            <a href=#>заблудились? напишите нам!</a>
+            <span class="visually-hidden">ссылка на google карты</span>
+            </a>
+            <a class="link link-write-us" href=#>заблудились? напишите нам!</a>
           </div>
         </section>
 
@@ -296,7 +312,10 @@
         <div class="map-section visually-hidden">
           <div class="map">
            <h2 class="visually-hidden">Наш адрес </h2>
+           <a href="https://goo.gl/maps/gjENuL17HZbDqn1V8">
            <img src="img/map-big.png" width="970" alt="Офис компании по адресу ул. Б. Конюшенная, д.19/8, Санкт-Петербург">
+           <span class="visually-hidden">ссылка на google карты</span>
+           </a>
            <button class="close-button" type="button" name="close-map">
              <span class="visually-hidden">Закрыть</span>
            </button>
