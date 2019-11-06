@@ -1,9 +1,51 @@
+
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cuprum Bold'), local('Cuprum-Bold'), url(../fonts/cuprumbold.woff2) format('woff2'),
+  url(../fonts/cuprumbold.woff) format('woff');}
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cuprum'), local('Cuprum-Regular'), url(../fonts/cuprum.woff2) format('woff2'),
+  url(../fonts/cuprum.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Cuprum Bold Italic'), local('Cuprum-Bold-Italic'), url(../fonts/cuprumbolditalic.woff2) format('woff2'),
+  url(../fonts/cuprumbolditalic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Cuprum Italic'), url(../fonts/cuprumitalic.woff2) format('woff2'),
+  url(../fonts/cuprumitalic.woff) format('woff');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(../fonts/ptsans.woff2) format('woff2'),
+  url(../fonts/ptsans.woff) format('woff');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans'), local('PTSans-Bold'), url(../fonts/ptsansbold.woff2) format('woff2'),
+  url(../fonts/ptsansbold.woff) format('woff');
+}
 body {
   margin: 0;
   padding: 0;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   background-color: #ffffff;
   color: #000000;
@@ -31,9 +73,8 @@ input[type="radio"].visually-hidden {
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
-
 }
 .main-navigation {
   font-size: 17px;
@@ -127,7 +168,7 @@ input[type="radio"].visually-hidden {
 }
 .user-navigation a:active {
   background-color: #161d29;
-  color:rgba(255,255, 266, 0.6);
+  color:rgba(255,255, 255, 0.6);
 }
 .main-header-logo {
   display: Block;;
@@ -200,13 +241,10 @@ color:#000000;
 outline:none;
 }
 
-/* #search-button-input{
-  border:none;
-  padding-top: 12px;
-} */
+
 #search-button-input::placeholder{
   color:#ffffff;
-};
+}
 .order-button {
   height:42px;
   padding-top: 10px;
@@ -239,7 +277,7 @@ outline:none;
   padding-left:10px;
   margin-left:43px;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   font-style: italic;
   font-stretch: normal;
   line-height: 23px;
@@ -459,7 +497,7 @@ outline:none;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 400;
 }
 .about ul{
   margin: 0;
@@ -484,7 +522,7 @@ outline:none;
 }
 .about p{
   font-family: 'PT Sans', Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   margin-top: 24px;
@@ -738,7 +776,7 @@ outline:none;
 }
 .catalog-header {
   font-size: 30px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 30px;
   display: inline-block;
   width: 940px;
@@ -846,11 +884,11 @@ outline:none;
 .items{
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 0px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 20px;
   width: 940px;
   padding: 0;
-  margin-top: 21px;
+  margin-top: 20px;
 }
 
 .items-catalog{
@@ -870,8 +908,9 @@ outline:none;
   width: 218px;
   height: 315px;
   margin-right: 20px;
-  margin-bottom: 21px;
-  font-weight: bold;
+  margin-bottom: 20px;
+  padding-top: 1px;
+  font-weight: 700;
   text-align: center;
   border: 1px solid #ccc;
 }
@@ -939,7 +978,7 @@ outline:none;
 .items a {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   color: #32425c;
   display: inline-block;
@@ -1063,7 +1102,7 @@ border-bottom-color: #367315 ;
   width:30px;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17.5px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
   color:#444444;
 }
@@ -1165,8 +1204,8 @@ border-bottom-color: #367315 ;
 }
 ul.pagination-list {
   padding-left: 0;
-  margin-top: 31px;
-  margin-bottom: 61px;
+  margin-top: 32px;
+  margin-bottom: 62px;
 }
 .pagination-list li{
   display: inline-block;
@@ -1182,7 +1221,7 @@ ul.pagination-list {
   display: inline-block;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
-  font-weight: normal;
+  font-weight: 400;
   color:#000000;
   text-transform: uppercase;
 
@@ -1251,7 +1290,7 @@ border-color: #bdc6ca;
   font-family: 'Cuprum',Arial, Helvetica, sans-serif;
   font-size: 30px;
   line-height: 30px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: left;
   text-transform: uppercase;
   margin: 0;
@@ -1272,7 +1311,7 @@ border-color: #bdc6ca;
   font-family: 'Cuprum',Arial, Helvetica, sans-serif;
   font-size: 36px;
   line-height: 36px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 11px;
@@ -1328,7 +1367,7 @@ border-color: #bdc6ca;
   padding-top: 15px;
   padding-left: 23px;
   font-size:21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
   color:#ffffff;
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
@@ -1363,7 +1402,7 @@ border-color: #bdc6ca;
   display:flex;
   flex-wrap: wrap;
   width:620px;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .offers-block-2{
   display:flex;
@@ -1380,7 +1419,7 @@ border-color: #bdc6ca;
 }
 .offers-card h3{
   font-family: 'Cuprum', Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   padding-left:23px;
@@ -1408,6 +1447,7 @@ border-color: #bdc6ca;
   background-image: url(../img/icon-1.svg), url(../img/new-flag.png);
   background-repeat: no-repeat, no-repeat;
   background-position:  213px 31px, 240px 0px;
+  margin-right: 20px;
 }
 .offers-block-1 .tools{
   background:#3bbce3 url(../img/icon-2.svg) no-repeat 197px 33px;
@@ -1566,7 +1606,7 @@ border-color: #bdc6ca;
 .popular-heading h2{
   display: inline-block;
   font-size: 30px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 30px;
   margin:0;
   margin-left: 28px;
@@ -1628,7 +1668,7 @@ border-color: #bdc6ca;
 }
 .popular-producers  img{
   position: absolute;
-  top:48%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%)
 }
@@ -1876,4 +1916,7 @@ border-top: 7px solid #ff5256;
   background-position: 0 0;
   top: -58px;
   left: 231px;
+}
+.about-left{
+  max-width: 520px;
 }
